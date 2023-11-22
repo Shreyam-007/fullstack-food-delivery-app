@@ -7,6 +7,30 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
+// cross origin configuration [Last updated 22/11/23]
+
+// import cors from "cors";
+// const prodOrigin = [process.env.ORIGIN_1, process.env.ORIGIN_2];
+// const devOrigin = ["http://localhost:5173"];
+// const allowedOrigins =
+//   process.env.NODE_ENV === "production" ? prodOrigin : devOrigin;
+// app.use(
+//   cors({
+//     origin: (origin, callback) => {
+//       if (allowedOrigins.includes(origin)) {
+//         console.log(origin, allowedOrigins);
+//         callback(null, true);
+//       } else {
+//         callback(new Error("Not allowed by CORS"));
+//       }
+//     },
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//   })
+// );
+
+
+
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 
